@@ -72,18 +72,30 @@ export default {
         return {
             codeSample: `<sgds-dropdown text="Click me">
     <sgds-dropdown-item>Item 1</sgds-dropdown-item>
-    <sgds-dropdown-item>Item 2</sgds-dropdown-item>
-    <sgds-dropdown-item>Item 3</sgds-dropdown-item>
+    <sgds-dropdown-item href="#!">Item 2, a link</sgds-dropdown-item>
     <sgds-dropdown-divider></sgds-dropdown-divider>
-    <sgds-dropdown-item>Item 4</sgds-dropdown-item>
+    <sgds-dropdown-item>
+        <p>
+            You can slot
+            <strong>anything</strong> you'd like here
+        </p>
+    </sgds-dropdown-item>
+    <sgds-dropdown-divider></sgds-dropdown-divider>
+    <sgds-dropdown-item>Item 3</sgds-dropdown-item>
 </sgds-dropdown>
 <sgds-dropdown text="Hover Me" hoverable>
     <sgds-dropdown-item>Item 1</sgds-dropdown-item>
-    <sgds-dropdown-item>Item 2</sgds-dropdown-item>
-    <sgds-dropdown-item>Item 3</sgds-dropdown-item>
+    <sgds-dropdown-item href="#!">Item 2, a link</sgds-dropdown-item>
     <sgds-dropdown-divider></sgds-dropdown-divider>
-    <sgds-dropdown-item>Item 4</sgds-dropdown-item>
-</sgds-dropdown>        
+    <sgds-dropdown-item>
+        <p>
+            You can slot
+            <strong>anything</strong> you'd like here
+        </p>
+    </sgds-dropdown-item>
+    <sgds-dropdown-divider></sgds-dropdown-divider>
+    <sgds-dropdown-item>Item 3</sgds-dropdown-item>
+</sgds-dropdown>
 `
         };
     }

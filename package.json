@@ -1,6 +1,6 @@
 {
     "name": "sgds-govtech-vue",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Singapore Government Design System for Vue.js",
     "repository": "https://github.com/GovTechSG/sgds-govtech-vue",
     "license": "MIT",
@@ -50,7 +50,7 @@
         "@vue/cli-plugin-eslint": "^3.10.0",
         "@vue/cli-service": "^3.10.0",
         "babel-eslint": "^10.0.1",
-        "eslint": "^6.1.0",
+        "eslint": "^6.5.1",
         "eslint-plugin-vue": "^5.2.3",
         "rollup": "^1.17.0",
         "rollup-plugin-buble": "^0.19.8",

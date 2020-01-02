@@ -21,6 +21,7 @@
             <div class="sgds-container">
                 <accordion-docs />
                 <dropdown-docs />
+                <tabs-docs />
             </div>
         </section>
         <footer class="sgds-footer top-section">
@@ -64,12 +65,14 @@
 <script>
 import AccordionDocs from "./docs/Accordion.vue";
 import DropdownDocs from "./docs/Dropdown.vue";
+import TabsDocs from "./docs/Tabs.vue";
 
 export default {
     name: "app",
     components: {
         AccordionDocs,
-        DropdownDocs
+        DropdownDocs,
+        TabsDocs
     },
     methods: {
         toggle() {

@@ -12,7 +12,7 @@ export default {
     data() {
         return {
             isActive: false,
-            _isTabItem: true // Used internally by Tab
+            IsTabItem: true // Used internally by Tab
         }
     },
     methods: {
@@ -24,7 +24,7 @@ export default {
         }
     },
     created() {
-        if (!this.$parent.$data._isTabs) {
+        if (!this.$parent.$data.IsTabs) {
             this.$destroy()
             throw new Error('You should wrap SgdsTabItem on a SgdsTabs')
         }
@@ -40,18 +40,13 @@ export default {
                 return
             }
         }
-        const vnode = createElement('div', {
-            class: 'col'
-        }, this.$slots.default)
-
         const tabContent = createElement('div', {
-             directives: [{
+            directives: [{
                 name: 'show',
                 value: this.isActive 
             }],
-            class: 'row',
             role: 'tabpanel',
-        }, [vnode])
+        }, this.$slots.default)
         
         return tabContent
     }

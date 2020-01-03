@@ -33,7 +33,7 @@ export default {
             activeTab: this.value || 0,
             defaultSlots: [],
             isTransitioning: false,
-            _isTabs: true
+            IsTabs: true
         }
     },
     computed: {
@@ -48,7 +48,7 @@ export default {
                 .filter((vnode) =>
                     vnode.componentInstance &&
                     vnode.componentInstance.$data &&
-                    vnode.componentInstance.$data._isTabItem)
+                    vnode.componentInstance.$data.IsTabItem)
                 .map((vnode) => vnode.componentInstance)
         }
     },

@@ -28,7 +28,7 @@
                    </sgds-tab-item>
                    <sgds-tab-item label="Tab 3">
                         <p>
-                        Tab 3 content
+                            Tab 3 content
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt enim illo
@@ -60,7 +60,7 @@
                     <tbody>
                         <tr>
                             <td>v-model</td>
-                            <td>Binding value, tab index</td>
+                            <td>Index of tab to display (zero-indexed)</td>
                             <td>Number</td>
                             <td>0 by default</td>
                         </tr>

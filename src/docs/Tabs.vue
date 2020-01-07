@@ -19,6 +19,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt enim illo
                             impedit libero, temporibus veritatis. Deserunt, fugit quasi! Voluptates!
                         </p>
+                        <button class="sgds-button is-primary" @click="selectedTab = 1">Go to tab 2</button>
                    </sgds-tab-item>
                    <sgds-tab-item label="Tab 2">
                         <p>
@@ -129,8 +130,9 @@ export default {
     },
     data() {
         return {
-            selectedTab: 1,
-            codeSample: `<sgds-tabs v-model="selectedTab" type="is-boxed" position="is-left">
+            selectedTab: 0,
+            codeSample: `<!-- selectedTab defaults to 0 if unspecified -->
+<sgds-tabs destroy-on-hide v-model="selectedTab" type="is-boxed" position="is-left">
     <sgds-tab-item label="Tab 1" icon="sgds-icon sgds-icon-place">
         <p>
             Tab 1 content
@@ -139,6 +141,7 @@ export default {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt enim illo
             impedit libero, temporibus veritatis. Deserunt, fugit quasi! Voluptates!
         </p>
+        <button class="sgds-button is-primary" @click="selectedTab = 1">Go to tab 2</button>
     </sgds-tab-item>
     <sgds-tab-item label="Tab 2">
         <p>
@@ -148,7 +151,7 @@ export default {
     </sgds-tab-item>
     <sgds-tab-item label="Tab 3">
         <p>
-        Tab 3 content
+            Tab 3 content
         </p>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt enim illo

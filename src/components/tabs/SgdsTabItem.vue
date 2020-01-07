@@ -26,7 +26,7 @@ export default {
     created() {
         if (!this.$parent.$data.IsTabs) {
             this.$destroy()
-            throw new Error('You should wrap SgdsTabItem on a SgdsTabs')
+            throw new Error('You should wrap SgdsTabItem in a SgdsTabs component.')
         }
         this.$parent.refreshSlots()
     },

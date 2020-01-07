@@ -89,7 +89,7 @@ export default {
         */
         tabClick(value) {
             if (this.activeTab === value) return
-            this.$emit('input', value)
+            this.$emit('input', value) // used by v-model
             this.changeTab(value)
         }
     },

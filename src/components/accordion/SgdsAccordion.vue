@@ -1,6 +1,6 @@
 <template>
-  <div class="sgds-accordion">
-    <a class="sgds-accordion-header" v-on:click="open = !open" v-bind:class="{ 'active': open }">
+  <div class="sgds-accordion" :class="{ 'is-open': open }">
+    <a class="sgds-accordion-header" v-on:click="open = !open" v-bind:class="{ 'is-active': open }">
       <h5>{{ title }}</h5>
       <i
         class="sgds-icon"
@@ -8,7 +8,7 @@
       ></i>
     </a>
     <transition v-on:enter="enter" v-on:leave="leave">
-      <div class="sgds-accordion-body is-open" v-if="open">
+      <div class="sgds-accordion-body" v-if="open">
         <slot></slot>
       </div>
     </transition>

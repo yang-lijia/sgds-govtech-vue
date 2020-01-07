@@ -3,13 +3,17 @@ import SgdsAccordionSet from "./components/accordion/SgdsAccordionSet.vue";
 import SgdsDropdown from './components/dropdown/SgdsDropdown.vue';
 import SgdsDropdownItem from './components/dropdown/SgdsDropdownItem.vue';
 import SgdsDropdownDivider from './components/dropdown/SgdsDropdownDivider.vue';
+import SgdsTabs from './components/tabs/SgdsTabs.vue';
+import SgdsTabItem from './components/tabs/SgdsTabItem.vue';
 
 const Components = {
     SgdsAccordion,
     SgdsAccordionSet,
     SgdsDropdown,
     SgdsDropdownItem,
-    SgdsDropdownDivider
+    SgdsDropdownDivider,
+    SgdsTabs,
+    SgdsTabItem
 };
 
 // Declare install function executed by Vue.use()
@@ -43,7 +47,9 @@ export {
     SgdsAccordionSet,
     SgdsDropdown,
     SgdsDropdownItem,
-    SgdsDropdownDivider
+    SgdsDropdownDivider,
+    SgdsTabs,
+    SgdsTabItem
 };
 
 export default Components;
